@@ -37,8 +37,6 @@
 
 {{ range .Order }}
 
-{{ with $req := findRequest $.Requests . }}
-
 ### {{ $req.Name }}
 
 {{ $req.Description }}
