@@ -37,10 +37,6 @@
 
 {{ range .Order }}
 
-### {{ $req.Name }}
-
-{{ $req.Description }}
-
 #### Request
 
 <table>
