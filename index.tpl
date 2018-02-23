@@ -37,8 +37,6 @@
 
 {{ range .Order }}
 
-{{ with $req := findRequest $.Requests . }}
-
 ### {{ $req.Name }}
 
 {{ $req.Description }}
@@ -49,8 +47,6 @@
     <tr><th>Method</th><td>{{ .Method }}</td></tr>
     <tr><th>URL</th><td>{{ .URL }}</td></tr>
 </table>
-
-{{ with $res := findResponse $req "default" }}
 
 #### Response
 
